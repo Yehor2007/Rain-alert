@@ -1,11 +1,11 @@
-appid = "3d3535aa8dc749f6ab8299d45e6b9feb"
+appid = os.environ['APPID']
 url = "https://api.openweathermap.org/data/2.5/onecall"
 lat = 48.464718
 lon = 35.046185
 import requests
 from twilio.rest import Client
-account_sid = "AC2f18bf31f92e7f83c23809e2ce2f9b34"
-auth_token = "e3b1cc1fef747a9801b381be0cd7cc52"
+account_sid = os.environ['ACCOUNT_SID']
+auth_token = os.environ['AUTH_TOKEN']
 parameters = {
     "lat": lat,
     "lon": lon,
